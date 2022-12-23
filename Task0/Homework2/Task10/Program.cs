@@ -1,6 +1,13 @@
 ﻿using static System.Console;
-int number=new Random().Next(100,1000);
-WriteLine(number);
-number=number/10;
-number=number%10;
-WriteLine(number);
+WriteLine("Введите трехзначное число: ");
+int number = Convert.ToInt32(ReadLine());
+if(number>999)
+{
+    WriteLine("Введено не верное число!");
+}
+else
+{
+    number=number/10;
+    number=number%10;
+    WriteLine(number);
+}
