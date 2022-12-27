@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static System.Console;
+WriteLine("Введите координату Ax: ");
+int.TryParse(ReadLine(), out int ax);
+WriteLine("Введите координату Ay: ");
+int.TryParse(ReadLine(), out int ay);
+WriteLine("Введите координату Az: ");
+int.TryParse(ReadLine(), out int az);
+WriteLine("Введите координату Bx: ");
+int.TryParse(ReadLine(), out int bx);
+WriteLine("Введите координату By: ");
+int.TryParse(ReadLine(), out int by);
+WriteLine("Введите координату Bz: ");
+int.TryParse(ReadLine(), out int bz);
+double length = Math.Sqrt(Math.Pow((bx-ax) , 2) + Math.Pow((by-ay) , 2) + Math.Pow((bz-az) , 2));
+WriteLine($"{length:f2}");
