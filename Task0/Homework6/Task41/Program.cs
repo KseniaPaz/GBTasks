@@ -1,8 +1,7 @@
 ﻿using static System.Console;
-Write("Введите элементы(через пробел): ");
+Write("Введите несколько чисел через пробел: ");
 int[] array = Array.ConvertAll(ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries), int.Parse);
 ArrayCount(array);
-WriteLine();
 WriteLine($"количество чисел больше 0: {ArrayCount(array)}");
 
 int ArrayCount(int[]inArray)
